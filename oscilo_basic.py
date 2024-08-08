@@ -56,6 +56,13 @@ if __name__ == "__main__":
     data = i.get_data()
     logger.info("Data fetch complete. Now what?")
     print(data)
+    ## SLLL-MKGO-Q1: What is the return type of our 'data' variable
+
+    ## SLLL-MKGO-Q1.1: What is the overall structure inside?
+    ## Data can be accessed like so:
+    logger.info(data['ch1'])
+    logger.info(data['ch2'])
+
 
     ## When we are all done playing we put our toys back in the toybox (cleanup resources..)
     i.relinquish_ownership()
